@@ -55,4 +55,4 @@ Route::resource('/categories', 'App\Http\Controllers\CategoryController');
 
 Route::resource('/users', 'App\Http\Controllers\UserControler');
 
-//URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/gX');
+URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g12');
