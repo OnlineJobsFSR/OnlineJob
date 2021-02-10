@@ -11,7 +11,7 @@ use App\Models\Job;
 class JobsController extends Controller
 {
     public function __construct() {
-        $this->middleware('admin', ['only'=> ['trash', 'delete','permanentDelete','restore']]);
+        $this->middleware('admin', ['only'=> 'trash', 'delete','permanentDelete','restore']);
         $this->middleware('author', ['only'=> ['create', 'store','edit','update']]);
     }
 

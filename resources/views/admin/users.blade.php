@@ -40,9 +40,8 @@
                         {{csrf_field()}}
                     </form>
 
-                    <form action="{{ route('users.destroy', $user) }}" method="post">
-                        {{method_field('delete')}}
-
+                    <form action="{{ route('users.destroy', $user  ) }}" method="post">
+                        {{csrf_field('delete')}}
                         <button class="btn btn-danger pull-left col-md-12 mt-1"> Delete </button>
                         {{csrf_field()}}
                     </form>
