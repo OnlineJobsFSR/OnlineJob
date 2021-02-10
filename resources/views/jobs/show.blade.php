@@ -10,8 +10,11 @@
                 <div class="col-md-12">
                     <h1>{{$job->title}}</h1>
                 </div>
+                @if(Auth::user())
+                    @if(Auth::user()->role_id == 1 || Auth::user()->role_id==2 && Auth::user()->id == $job->user_id)
                 <div class="btn-group">
                     <a class="btn btn-primary btn-xs pull-left btn-margin-right btn-margin-right" type="submit" href="{{route('jobs.modify', $job->id)}}"> Edit  </a>
+
                     <form action="{{route('jobs.remove', $job->id)}}" method="post">
                         {{method_field('delete')}}
                         <button class="btn btn-danger btn-xs pull-left" type="submit">Delete</button>
