@@ -27,6 +27,8 @@
 
                 <a href="{{route('categories.create')}}" class="btn btn-success btn-margin-right">Create new categorie</a>
 
+                href="{{route('users.show')}}" class="btn btn-success btn-margin-right">Manage useres</a>
+
             </div>
 
         @endif
@@ -39,6 +41,9 @@
                 <a href="{{route('jobs.new')}}" class="btn btn-primary btn-margin-right">Create job list</a>
 
                 <a href="{{route('categories.create')}}" class="btn btn-success btn-margin-right">Create new categorie</a>
+
+
+
 
             </div>
 
