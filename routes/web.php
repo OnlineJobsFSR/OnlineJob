@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/g12', 'App\Http\Controllers\JobsController@index');
+//Route::get('/g12', 'App\Http\Controllers\JobsController@index');
 
 Auth::routes();
 
