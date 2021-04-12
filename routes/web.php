@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/g12', 'App\Http\Controllers\JobsController@index');
+Route::get('/g12', 'App\Http\Controllers\JobsController@index');
 
 Auth::routes();
 
-Route::get('/g12', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/g12', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //for displaying all jobs
 Route::get('/jobs', 'App\Http\Controllers\JobsController@index');
 Route::get('/jobs', [App\Http\Controllers\JobsController::class,'index'])->name('jobs.show');
